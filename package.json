@@ -1,0 +1,17 @@
+{
+  "name": "marketsim",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "start:server": "npm --prefix server start",
+    "dev:app": "npm --prefix app run start",
+    "web": "npm --prefix app run web",
+    "test": "npm --prefix server test",
+    "example:agent": "node --experimental-strip-types examples/simple-agent.ts",
+    "example:mcp": "node --experimental-strip-types examples/mcp-client.ts"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2"
+  }
+}
